@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { subscribers, Subscriber } from '@/data/subscriptions';
-import { ChevronLeft, ChevronRight, Check, X } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Check, X, Download } from 'lucide-react';
+import * as XLSX from 'xlsx';
 
 export const SubscribersTable = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -18,11 +19,43 @@ export const SubscribersTable = () => {
     return `R$ ${value.toFixed(2)}`;
   };
 
+  const exportToExcel = () => {
+    const exportData = subscribers.map(s => ({
+      'ID': s.id,
+      'Nome': s.name,
+      'Plano': s.plan,
+      'Data Início': formatDate(s.startDate),
+      'Tipo': s.subscriptionType === 'Monthly' ? 'Mensal' : s.subscriptionType === 'Quarterly' ? 'Trimestral' : 'Anual',
+      'Renovação Automática': s.autoRenewal ? 'Sim' : 'Não',
+      'Valor Assinatura': s.subscriptionPrice,
+      'Cupom': s.couponValue,
+      'EA Play': s.eaPlaySeasonPass ? 'Sim' : 'Não',
+      'Valor EA Play': s.eaPlayPrice,
+      'Minecraft': s.minecraftSeasonPass ? 'Sim' : 'Não',
+      'Valor Minecraft': s.minecraftPrice,
+      'Total': s.totalValue
+    }));
+
+    const ws = XLSX.utils.json_to_sheet(exportData);
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'Assinantes');
+    XLSX.writeFile(wb, 'xbox_gamepass_assinantes.xlsx');
+  };
+
   return (
     <div className="glass rounded-xl p-6">
-      <h3 className="text-lg font-semibold font-display text-foreground mb-6">
-        Lista de Assinantes
-      </h3>
+      <div className="flex items-center justify-between mb-6">
+        <h3 className="text-lg font-semibold font-display text-foreground">
+          Lista de Assinantes
+        </h3>
+        <button
+          onClick={exportToExcel}
+          className="flex items-center gap-2 px-4 py-2 rounded-lg gradient-xbox text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity"
+        >
+          <Download className="h-4 w-4" />
+          Exportar Excel
+        </button>
+      </div>
       <div className="overflow-x-auto">
         <table className="w-full">
           <thead>
