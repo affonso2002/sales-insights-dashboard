@@ -65,9 +65,19 @@ This project is built with:
 Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
 
 ## Can I connect a custom domain to my Lovable project?
-
 Yes, you can!
 
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+## O dashboard inclui do Projeto inclui:
+
+- 4 KPIs principais: Total de assinantes, receita total, ticket médio e cupons
+- Gráfico de área: Receita mensal ao longo de 2024
+- Gráfico de barras: Novos assinantes por mês
+- Gráfico de pizza: Distribuição por tipo de assinatura (Mensal/Trimestral/Anual)
+- Gauge de renovação: Taxa de auto-renovação visual
+- Card Season Passes: EA Play e Minecraft com totais
+- Tabela paginada: Lista completa dos 98 assinantes
+- Design dark mode com paleta verde Xbox (#22C55E, #2AE6B1), efeitos glassmorphism e animações suaves.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
