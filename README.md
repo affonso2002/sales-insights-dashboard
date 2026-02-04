@@ -65,9 +65,16 @@ This project is built with:
 Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
 
 ## Can I connect a custom domain to my Lovable project?
+
 Yes, you can!
 
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+## Objetivo do projeto:
+
+- O objetivo deste projeto é criar um dashboard de vendas, com foco na organização e visualização de dados. O objetivo é transformar dados brutos em informações visuais claras e úteis,     permitindo uma análise eficaz do desempenho de vendas e a tomada de decisões baseadas em dados.
 
 ## O dashboard inclui do Projeto inclui:
 
@@ -80,4 +87,3 @@ To connect a domain, navigate to Project > Settings > Domains and click Connect 
 - Tabela paginada: Lista completa dos 98 assinantes
 - Design dark mode com paleta verde Xbox (#22C55E, #2AE6B1), efeitos glassmorphism e animações suaves.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
