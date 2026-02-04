@@ -4,6 +4,21 @@
 
 **URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
 
+## Objetivo do projeto:
+
+- O objetivo deste projeto é criar um dashboard de vendas, com foco na organização e visualização de dados. O objetivo é transformar dados brutos em informações visuais claras e úteis,     permitindo uma análise eficaz do desempenho de vendas e a tomada de decisões baseadas em dados.
+
+## O dashboard do Projeto inclui:
+
+- 4 KPIs principais: Total de assinantes, receita total, ticket médio e cupons
+- Gráfico de área: Receita mensal ao longo de 2024
+- Gráfico de barras: Novos assinantes por mês
+- Gráfico de pizza: Distribuição por tipo de assinatura (Mensal/Trimestral/Anual)
+- Gauge de renovação: Taxa de auto-renovação visual
+- Card Season Passes: EA Play e Minecraft com totais
+- Tabela paginada: Lista completa dos 98 assinantes
+- Design dark mode com paleta verde Xbox (#22C55E, #2AE6B1), efeitos glassmorphism e animações suaves.
+
 ## How can I edit this code?
 
 There are several ways of editing your application.
@@ -71,19 +86,4 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
-
-## Objetivo do projeto:
-
-- O objetivo deste projeto é criar um dashboard de vendas, com foco na organização e visualização de dados. O objetivo é transformar dados brutos em informações visuais claras e úteis,     permitindo uma análise eficaz do desempenho de vendas e a tomada de decisões baseadas em dados.
-
-## O dashboard inclui do Projeto inclui:
-
-- 4 KPIs principais: Total de assinantes, receita total, ticket médio e cupons
-- Gráfico de área: Receita mensal ao longo de 2024
-- Gráfico de barras: Novos assinantes por mês
-- Gráfico de pizza: Distribuição por tipo de assinatura (Mensal/Trimestral/Anual)
-- Gauge de renovação: Taxa de auto-renovação visual
-- Card Season Passes: EA Play e Minecraft com totais
-- Tabela paginada: Lista completa dos 98 assinantes
-- Design dark mode com paleta verde Xbox (#22C55E, #2AE6B1), efeitos glassmorphism e animações suaves.
 
